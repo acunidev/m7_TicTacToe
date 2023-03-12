@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nuvols"
+    tools:context=".SettingsApp">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/tictactoe_icon"
+        android:text="3xWARS"
+        android:textColor="#00a62c"
+        android:textSize="60dp" />
+
+    <ImageButton
+        android:id="@+id/arrowSettings"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/backarrow" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:shadowColor="@color/black"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="4"
+        android:text="Options"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textStyle="italic|bold" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp">
+
+        <TableRow
+            android:layout_width="250dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:shadowColor="@color/black"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="4"
+                android:text="Music"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="italic|bold" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:layout_marginLeft="200dp"
+                android:trackTint="#3F51B5"
+                android:trackTintMode="screen" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:shadowColor="@color/black"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="4"
+                android:text="Sound effets"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="italic|bold" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:layout_marginStart="200dp"
+                android:trackTintMode="screen" />
+        </TableRow>
+    </TableLayout>
+
+
+</RelativeLayout>

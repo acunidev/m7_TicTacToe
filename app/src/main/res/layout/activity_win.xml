@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nuvols"
+    tools:context=".gamemode.Win">
+
+    <TextView
+        android:id="@+id/winnerTV"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/bordercontainer"
+        android:shadowColor="@color/black"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="4"
+        android:text="WON"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="italic|bold" />
+
+    <ImageView
+        android:id="@+id/winnerSkin"
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/narutopic" />
+
+
+    <Button
+        android:id="@+id/playAgainButton"
+        android:layout_width="300dp"
+        android:layout_height="63dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="150dp"
+        android:backgroundTint="#EE5798DA"
+        android:text="Play again"
+        android:textSize="20sp"
+        android:textStyle="italic|bold" />
+
+    <Button
+        android:id="@+id/goHomeBtnWin"
+        android:layout_width="300dp"
+        android:layout_height="63dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="75dp"
+        android:backgroundTint="#E147"
+        android:text="@string/home"
+        android:textSize="20sp" />
+
+</RelativeLayout>
